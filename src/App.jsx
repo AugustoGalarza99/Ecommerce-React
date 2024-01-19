@@ -1,7 +1,8 @@
 import Button from "./components/Button/Button"
 import NavBar from "./components/NavBar/NavBar"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
-import ItemCounts from "./components/ItemCount"
+import ItemCount from "./components/ItemCount/ItemCount";
+//import ItemCounts from "./components/ItemCount"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
