@@ -1,6 +1,6 @@
 const products = [
     {
-        id: 1,
+        id: "1",
         name: "Iphone12",
         price: 1000,
         category: "celular",
@@ -9,7 +9,7 @@ const products = [
         description: "Descripcion de Iphone 12"
     },
     {
-        id: 1,
+        id: "2",
         name: "Iphone12",
         price: 1000,
         category: "celular",
@@ -18,7 +18,7 @@ const products = [
         description: "Descripcion de Iphone 12"
     },
     {
-        id: 1,
+        id: "3",
         name: "Iphone12",
         price: 1000,
         category: "celular",
@@ -37,6 +37,14 @@ export const getProducts = () => {
 }
 
 export const getProductById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === productId))
+        }, 500)
+    })
+}
+
+export const getProductsByCategory = (productId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products.find(prod => prod.id === productId))
